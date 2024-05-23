@@ -1,0 +1,36 @@
+{
+  "name": "nine-agency",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "tailwind": "tailwindcss -i ./styles/globals.css -o ./styles/tailwind.css"
+  },
+  "dependencies": {
+    "@types/classnames": "^2.3.1",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.2.5",
+    "motion": "^10.17.0",
+    "next": "14.2.3",
+    "npm": "^10.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scroll": "^1.9.0",
+    "sass": "^1.77.2",
+    "swiper": "^11.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "tailwindcss-themer": "^4.0.0",
+    "typescript": "^5.4.5"
+  }
+}
