@@ -28,6 +28,7 @@ export default function Footer() {
           "
           placeholder={'Your email address…'}
           placeholderTextColor={'text-grayLight'}
+          color={'gray'}
         />
         <Button
           label={'Subscribe'}

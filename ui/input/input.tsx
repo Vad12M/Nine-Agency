@@ -5,6 +5,7 @@ interface IProps {
   isArea?: boolean;
   className?: string;
   placeholderTextColor?: string;
+  color?: string;
 }
 
 
@@ -15,12 +16,13 @@ export default function Input({
   isArea,
   className,
   placeholderTextColor = 'text-white',
+  color = 'white',
 }: IProps) {
   if (isArea) {
     return (
       <textarea
         className={`
-          border border-white py-4 px-6 rounded-[16px] w-full bg-background text-white placeholder:${placeholderTextColor}
+          border border-white py-4 px-6 rounded-[16px] w-full bg-background text-${color} placeholder:${placeholderTextColor}
           h-[150px] outline-none
           ${className}
         `}
@@ -35,7 +37,7 @@ export default function Input({
     <input
       type="text"
       className={`
-        border border-white py-4 px-6 rounded-[16px] w-full bg-background text-white placeholder:${placeholderTextColor} relative
+        border border-white py-4 px-6 rounded-[16px] w-full bg-background text-${color} placeholder:${placeholderTextColor} relative
         outline-0
         ${className}
       `}

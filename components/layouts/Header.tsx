@@ -32,8 +32,6 @@ export default function Header() {
 
   return (
     <header className="flex items-center justify-between py-6 bg-background z-50 m-container md:px-0 mx-10">
-
-
       {!isHomePage && isMobile ?
         <button className="ml-4 z-50" onClick={() => router.push(sessionStorage.getItem('previousUrl') || '/')}>
           <LeftIcon/>
