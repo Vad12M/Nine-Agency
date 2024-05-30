@@ -12,11 +12,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const showLinks = () => (
-    <nav className="flex md:flex-row flex-col items-center md:space-y-2 space-y-4 md:space-x-12 text-white">
+    <nav className="flex md:flex-row flex-col items-center md:space-y-0 space-y-4 md:space-x-12 text-white">
       <a href={'#about'}>
         <Typography text={'About us'} type={'body'}/>
       </a>
-      <Link href={'/projects'}>
+      <Link href={'#projects'}>
         <Typography text={'Our cases'} type={'body'}/>
       </Link>
       <Link href={'/news'}>
